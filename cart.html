@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .cart-container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        h2 {
+            font-size: 28px;
+            /* color: #007BFF; */
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            text-decoration: none;
+            color: #fff;
+            /* background-color: #007BFF; */
+            background-color: #4CAF50;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h2>Nexora</h2>
+        <h1>Your Cart is Empty</h1>
+        <p>No items found in your cart.</p>
+        <div class="btn-container">
+            <a href="shoping.html">Home</a>
+            <a href="register.html">Sign In</a>
+            <a href="sign up.html">Sign Up</a>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const cart = JSON.parse(localStorage.getItem("cart")) || {};
+        const cartItemsContainer = document.getElementById("cart-items");
+        const cartEmptyMessage = document.getElementById("cart-empty");
+
+        function renderCart() {
+            cartItemsContainer.innerHTML = "";
+            let hasItems = false;
+
+            for (const [id, quantity] of Object.entries(cart)) {
+                if (quantity > 0) {
+                    hasItems = true;
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `Product ID: ${id} - Quantity: ${quantity}`;
+                    cartItemsContainer.appendChild(listItem);
+                }
+            }
+
+            cartEmptyMessage.style.display = hasItems ? "none" : "block";
+        }
+
+        renderCart();
+    });
+</script>
+
+</html>

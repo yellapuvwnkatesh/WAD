@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <!-- <link rel="stylesheet" href="regestaion.css"> -->
+    <style>
+        /* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h5 a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h5 a:hover {
+    text-decoration: underline;
+}
+
+/* Input Fields */
+form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle; /* Aligns the radio button vertically with the label */
+}
+
+label[for="male"], label[for="female"], label[for="other"] {
+    font-weight: normal;
+    margin-right: 10px;
+    display: inline-block; /* Makes the labels appear on the same line */
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+
+<body>
+    <form action="post">
+        <div>
+            <h1>Nexora</h1>
+            <h3>Registration</h3>
+            <h5>If you have an account, <a href="signup.html">Signin</a></h5>
+        </div>
+        <div>
+            <label for="Email id"><b>Email ID</b></label>
+            <input type="text" id="Email id" name="Email id" placeholder="Enter your Email ID">
+        </div>
+        <div>
+            <label for="Phone no"><b>Phone Number</b></label>
+            <input type="text" id="Phone no" name="Phone no" placeholder="Enter your Phone number">
+        </div>
+        <div>
+            <label for="Password"><b>Password</b></label>
+            <input type="text" id="Password" name="Password" placeholder="Enter your Password">
+        </div>
+        <div>
+            <label for="Gender"><b>Choose your gender:</b></label><br>
+            <input type="radio" id="male" name="Gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="Gender" value="other">
+            <label for="other">Other</label>
+        </div>
+        <button type="button"><a href="signup.html">Register</a></button>
+    </form>
+</body>
+
+</html>

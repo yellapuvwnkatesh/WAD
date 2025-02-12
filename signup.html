@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <!-- <link rel="stylesheet" href="sign.css"> -->
+    <style>/* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            width: 100%;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        /* Main Content */
+        main {
+            margin-top: 100px; /* Adds space to prevent content from overlapping with the fixed header */
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        /* Form Styling */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        
+        form div {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        
+        input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        
+        /* Buttons */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        /* Additional Text Links */
+        h5 {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        
+        h5 a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        h5 a:hover {
+            text-decoration: underline;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nexora</h1>
+    </header>
+    <main>
+        <h3>Login</h3>
+        <h5>Don’t have an account? <a href="register.html">Sign up</a></h5>
+        <form action="post">
+            <div>
+                <label for="User id"><b>User ID</b></label>
+                <input type="text" id="User id" name="User id:" placeholder="Email or Phone Number">
+            </div>
+            <div>
+                <label for="Password"><b>Password</b></label>
+                <input type="text" id="Password" name="Email id" placeholder="Enter your Password">
+            </div>
+            <a href="shoping1.html"><button type="button">Log in</button></a>
+        </form>
+    </main>
+</body>
+
+</html>

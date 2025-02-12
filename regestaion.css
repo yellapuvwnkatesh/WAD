@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form Container */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+h5 a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h5 a:hover {
+    text-decoration: underline;
+}
+
+/* Input Fields */
+form div {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Radio Buttons */
+input[type="radio"] {
+    margin-right: 5px;
+    vertical-align: middle; /* Aligns the radio button vertically with the label */
+}
+
+label[for="male"], label[for="female"], label[for="other"] {
+    font-weight: normal;
+    margin-right: 10px;
+    display: inline-block; /* Makes the labels appear on the same line */
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
